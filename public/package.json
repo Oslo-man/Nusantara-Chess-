@@ -1,0 +1,12 @@
+{
+  "name": "nusantara-chess-vercel",
+  "version": "1.0.0",
+  "description": "Game Review catur dengan Stockfish 100% server-side, dideploy sebagai Vercel Functions",
+  "private": true,
+  "dependencies": {
+    "stockfish": "^18.0.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

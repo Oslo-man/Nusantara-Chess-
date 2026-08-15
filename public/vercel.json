@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/analyze.js": {
+      "maxDuration": 10,
+      "includeFiles": "node_modules/stockfish/**"
+    },
+    "api/analyze-batch.js": {
+      "maxDuration": 10,
+      "includeFiles": "node_modules/stockfish/**"
+    },
+    "api/health.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/gamereview.html" }
+  ],
+  "cleanUrls": true
+}
